@@ -36,12 +36,18 @@ By using these elements, DFS, BFS, and A* algorithms search for optimal or satis
 by exploring the space of possible states. Each of these algorithms uses different strategies to select actions and perform the
 search. It is worth noting that these algorithms are not limited to robot navigation but can also be applied to other pathfinding
 problems, such as trajectory planning in virtual environments, puzzle solving, and many more.
+<p align="center">
+  <img src="Graph representation of problem formulation.png" title="Graph representation of problem formulation"  height="400"><br>
+</p>
 
 
 <h2> General principle of the project:</h2>
 The graph represents the general principle of the project. It
 starts with the ”Start” node and then follows the ”Search Algorithm” process. The process checks for obstacles in the path. If there is an obstacle, the project returns to an explored point to find an alternative path. If there is no obstacle, it checks if
 the destination has been reached. If the destination is reached, the project stops. If not, it chooses another path and continues the search algorithm. This loop continues until the destination is reached or there are no more available paths to explore.
+<p align="center">
+  <img src="General principle of the project.png" title="General principle of the project"  height="400"><br>
+</p>
 
 
 <h2> General Approach:</h2>
@@ -49,3 +55,7 @@ the destination has been reached. If the destination is reached, the project sto
 The general approach for the DFS, BFS, and A* algorithms can be described by the graph above. The nodes in the graph
 represent different components of the approach, including the Frontier, Explored Set, Solution, and Node. The edges between
 the nodes illustrate the actions taken during the algorithm execution,such as removing a node from the Frontier, performing a Goal Test, adding a node to the Explored Set, and adding a node to the Frontier. By following this approach, the DFS, BFS, and A* algorithms explore the space of possible states by adding new nodes to the Frontier, examining them, and continuing the search until a solution is found or all options have been explored.
+<p align="center">
+  <img src="the general approach for DFS BFSand A.png" title="Graph representation of the general approach for DFS, BFS, and A*"  height="400"><br>
+</p>
+
