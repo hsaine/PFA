@@ -65,15 +65,15 @@ In this section, we present the results of our comparative study, focusing on th
 We first compared the performance of BFS and DFS when the start and goal positions were relatively far apart in the maze.
 The objective was to evaluate how these algorithms fared in terms of path-finding efficiency over longer distances. Figures illustrates the comparison of time execution, path cost, and search path for BFS and DFS.
 <p align="center">
-  <img src="output_8_0.png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>
+  <img src=".png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
-  <img src="output_9_0.png" title="Path Length Comparison: DFS vs BFS"  height="400"><br>
+  <img src=".png" title="Path Length Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
-  <img src="output_10_0.png" title="Search Path Comparison: DFS vs BFS"  height="400"><br>
+  <img src=".png" title="Search Path Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 From the results, we observed that DFS generally exhibited lower Serach path costs compared to BFS in this scenario. This is because BFS systematically explores the neighboring nodes, ensuring that the shortest path is found. However, DFS demonstrated faster execution times due to its depth-first nature, which allows it to quickly explore a single branch of the maze. These findings highlight the trade-off between path optimality and computational efficiency when selecting between BFS and DFS for maze path planning. In conclusion, based on our findings, it can be concluded that DFS outperforms BFS in terms of memory complexity. DFS requires less memory as it explores
@@ -96,9 +96,30 @@ Figures presents the results of time execution, path cost, and search path for D
 The results indicated that BFS generally achieved lower search path costs compared to DFS when the start and goal were near. This is because BFS explores the maze uniformly and is more likely to find a shorter path when the goal is in close proximity. However, DFS exhibited slowly execution times due to its depth-first nature. These findings emphasize the importance of considering the proximity of the start and goal positions when selecting between DFS and BFS for maze path planning.
 
 <h2>A* vs. BFS:</h2>
+In the final comparison, we evaluated the performance of A* and BFS. A* is an informed search algorithm that utilizes heuristics to guide its search, while BFS is an uninformed algorithm that explores the maze uniformly. The comparison aimed to assess the effectiveness of A* in finding optimal paths compared to the more straightforward BFS. Figures showcases the comparison results of time execution, path cost, and search path for A* and BFS.
+
+
+<p align="center">
+  <img src=".png" title="Execution Time Comparison: A* vs BFS"  height="400"><br>
+</p>
+
+<p align="center">
+  <img src=".png" title="Path Length Comparison: A* vs BFS"  height="400"><br>
+</p>
+
+<p align="center">
+  <img src=".png" title="Search Path Comparison: A* vs BFS"  height="400"><br>
+</p>
+
+The results indicate that A* and BFS have similar travel costs. However, A* integrates heuristics to guide research, allowing for more informed decisions. As a result, A* achieves a slightly better optimization than BFS. On the other hand, A* has a slightly faster run time than BFS due to the additional calculations required for the heuristics. These results highlight the trade-off between trajectory optimization and the complexity of the calculations when choosing between A* and BFS for planning labyrinthine trajectories. It should be noted that A* typically explores a smaller number of nodes than BFS to achieve the objective.
+Overall, our comparative study provided valuable information on the strengths and weaknesses of different search algorithms for maze path planning. Quantitative analysis of time execution, path cost and search path revealed distinct performance models and trade-offs among algorithms. These results contribute to a better understanding of algorithm selection based on the specific characteristics and requirements of the maze problem at hand.
+
 
 <h1 align="center">Selection of the Best Algorithm</h1>
 In our study, the selection of the best-performing algorithm was based on several criteria, including path cost, search path, and time consumption. These criteria were chosen to evaluatethe overall performance of the search algorithms in maze path planning. Based on the results and analysis conducted, we have determined that A* is the best-performing algorithm for maze path planning. A* consistently demonstrated lower path costs compared to BFS and DFS, indicating its ability to find more optimal paths. Although A* exhibited slightly smaller time execution compared to BFS and DFS due to the additional computational requirements of the heuristics, the trade-off between path optimality and computational complexity was deemed acceptable.
+
+
+
 
 <h2>Justification of Algorithm Selection:</h2>
 The selection of A* as the best-performing algorithm is justified by its superior performance in terms of path cost and its ability to find more optimal paths compared to the other algorithms. Path cost is a crucial metric in maze path planning as it directly affects the efficiency and optimality of the solution. By selecting A*, we can prioritize finding the shortest and most optimal paths within the maze. Furthermore, the objectives of our project were to compare the efficiency of different search algorithms and contribute to the advancement of knowledge in the field of path planning. A* aligns well with these objectives as it represents an informed search algorithm that incorporates heuristics to guide its exploration, demonstrating its potential for solving complex maze path planning problems.
@@ -110,4 +131,61 @@ A* has several strengths that make it a suitable choice for maze path planning a
 </p>
 
 In conclusion, A* was chosen as the best algorithm in our study based on its superior performance in terms of path cost and its ability to find more optimal paths. Its strengths, such as intelligent exploration and adaptability to different maze configurations, make it a powerful tool for maze path planning and other related applications.
+
+<h1>Visual Results</h1>
+In this section, we present the figures that illustrate the results of the best-performing algorithm, A*, in our comparative study.
+These figures provide a visual representation of the algorithm’s performance and offer valuable insights into its efficiency and effectiveness in maze path planning.
+<h2> Figure 1: Time Execution Comparison:</h2>
+Figure 1 showcases a comparison of the time execution between A* and the other search algorithms, such as BFS and
+DFS. The purpose of this figure is to visually depict the computational efficiency of A* in finding the optimal path within
+the maze. By analyzing the time execution data, we can assess the algorithm’s speed and efficiency in completing the path
+planning task.
+<p align="center">
+  <img src="output_8_0" title="Time consumption"  height="400"><br>
+</p>
+
+<h2> Figure 2: Path Cost Comparison:</h2>
+Figure 2 presents a comparison of the path costs generated by A* and the other algorithms. The primary objective of this figure is to visualize the optimality of the paths found by A* in comparison to other search algorithms. By examining the path cost data, we can determine the algorithm’s ability to find the shortest or most optimal paths within the maze.
+<p align="center">
+  <img src="output_9_0" title="Path length"  height="400"><br>
+</p>
+
+<h2> Figure 3: Search Path Visualization:</h2>
+Figure 3 provides a visual representation of the search paths generated by A* and the other algorithms. This figure displays the actual paths traversed by the algorithms from the start to the goal position within the maze. The purpose of this visualization is to allow for a qualitative assessment of the algorithm’s effectiveness in navigating through the maze and reaching the goal position.
+
+<p align="center">
+  <img src="output_10_0" title="Search path"  height="400"><br>
+</p>
+
+<h2>Analysis of the Visual Representations:</h2>
+The visual representations provided by these figures offer valuable insights into the efficiency and effectiveness of the A* algorithm in maze path planning. From Figure 1, we can observe the comparative time execution between A* and the other search algorithms. If A* consistently demonstrates lower execution times, it indicates that the algorithm is computationally efficient in finding the optimal
+path within the maze.
+Figure 2 allows us to analyze the path costs generated by A* and other algorithms. If A* consistently produces lower path costs, it signifies that the algorithm excels in finding the shortest or most optimal paths within the maze. Finally, Figure 3 provides a visual depiction of the search paths generated by A* and other algorithms. By examining the search paths, we can assess the effectiveness of A* in navigating through the maze and reaching the goal position. A* is expected to produce more direct and efficient paths compared to other algorithms.
+Overall, the visual representations contribute to a comprehensive evaluation of the efficiency and effectiveness of the A* algorithm in maze path planning. They provide valuable insights into the algorithm’s computational efficiency, optimality of the paths found, and its ability to navigate through the maze effectively. These visual results further support the selection of A* as the best algorithm in our study and highlight its suitability for maze path planning applications.
+
+<h1>Conclusions</h1>
+In this project, we conducted a comparative study of DFS, BFS, and A* search algorithms in maze path planning. Our study aimed to evaluate the performance and efficiency of these algorithms in terms of path cost and computational complexity. Through extensive experimentation, analysis of quantitative metrics, and visual representation of results, we have made several contributions and achieved significant insights. The main contributions and achievements of our project include:
+
+<ul>
+  <li>Comparative Analysis: We provided a comprehensive comparison of DFS, BFS, and A* algorithms, considering their performance in different maze scenarios. This analysis allowed us to understand the trade-offs between path optimality, computational efficiency, and solution quality.</li>
+  <li>Algorithm Selection: Based on the evaluation metrics and performance analysis, we identified A* as the best algorithm
+for maze path planning. A* consistently outperformed other algorithms in terms of path cost, providing more optimal solutions while considering computational complexity.</li>
+  <li>Visual Representation: We presented visual results in the form of figures, showcasing the performance of different algorithms in terms of time execution, path cost, and search path. These visual representations enhanced the clarity and interpretability of our findings. The importance of this study lies in its contribution to the advancement of the field of path planning. By exploring the strengths and weaknesses of DFS, BFS, and A* algorithms, we provided valuable insights into their applicability in maze-like environments. This knowledge can be applied to various domains such as robotics, navigation systems, and game development, where efficient and effective path planning is essential. Based on the limitations and insights gained from our study, several future research directions and improvements can be considered:
+  <li>Advanced Heuristics: Further research can focus on developing more sophisticated heuristics for A* algorithm to enhance its path-finding capabilities and reduce computational
+complexity.</li>
+  <li>Hybrid Approaches: Investigating hybrid approaches that combine the strengths of different algorithms can be explored. This may involve combining A* with other search techniques or incorporating machine learning methods for improved performance.
+</li>
+  <li> Real-world Implementations: Extending the study to realworld scenarios and evaluating the performance of these algorithms in practical applications can provide valuable insights and validate their effectiveness in practical use cases.
+</li>
+<li>Dynamic Environments: Considering dynamic or changing environments where obstacles or paths may dynamicallychange over time can be an interesting avenue for future research.
+</li>
+
+  </li>
+
+
+</ul>
+Overall, our project has shed light on the performance and
+efficiency of search algorithms in maze path planning. The insights gained from this study can guide researchers and practitioners in selecting appropriate algorithms and designing efficient path planning systems. By addressing the identified limitations and exploring future research directions, we can continue to advance the field of path planning and its applications
+in various domains.
+
 
