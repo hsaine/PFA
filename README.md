@@ -83,7 +83,7 @@ a single path deeply before backtracking, while BFS needs to store all visited n
 In the next comparison, we focused on the performance of DFS and BFS when the start and goal positions were in close proximity within the maze. This evaluation aimed to assess how these algorithms performed when the search space was limited.
 Figures presents the results of time execution, path cost, and search path for DFS and BFS.
 <p align="center">
-  <img src="1.png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>1
+  <img src="1.png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
