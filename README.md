@@ -65,15 +65,15 @@ In this section, we present the results of our comparative study, focusing on th
 We first compared the performance of BFS and DFS when the start and goal positions were relatively far apart in the maze.
 The objective was to evaluate how these algorithms fared in terms of path-finding efficiency over longer distances. Figures illustrates the comparison of time execution, path cost, and search path for BFS and DFS.
 <p align="center">
-  <img src=".png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>
+  <img src="Execution Time Comparison DFS vs BFS.png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
-  <img src=".png" title="Path Length Comparison: DFS vs BFS"  height="400"><br>
+  <img src="Path Length Comparison DFS vs BFS.png" title="Path Length Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
-  <img src=".png" title="Search Path Comparison: DFS vs BFS"  height="400"><br>
+  <img src="Search Path Comparison DFS vs BFS.png" title="Search Path Comparison: DFS vs BFS"  height="400"><br>
 </p>
 
 From the results, we observed that DFS generally exhibited lower Serach path costs compared to BFS in this scenario. This is because BFS systematically explores the neighboring nodes, ensuring that the shortest path is found. However, DFS demonstrated faster execution times due to its depth-first nature, which allows it to quickly explore a single branch of the maze. These findings highlight the trade-off between path optimality and computational efficiency when selecting between BFS and DFS for maze path planning. In conclusion, based on our findings, it can be concluded that DFS outperforms BFS in terms of memory complexity. DFS requires less memory as it explores
@@ -100,15 +100,15 @@ In the final comparison, we evaluated the performance of A* and BFS. A* is an in
 
 
 <p align="center">
-  <img src=".png" title="Execution Time Comparison: A* vs BFS"  height="400"><br>
+  <img src="a7.png" title="Execution Time Comparison: A* vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
-  <img src=".png" title="Path Length Comparison: A* vs BFS"  height="400"><br>
+  <img src="a8.png" title="Path Length Comparison: A* vs BFS"  height="400"><br>
 </p>
 
 <p align="center">
-  <img src=".png" title="Search Path Comparison: A* vs BFS"  height="400"><br>
+  <img src="a9.png" title="Search Path Comparison: A* vs BFS"  height="400"><br>
 </p>
 
 The results indicate that A* and BFS have similar travel costs. However, A* integrates heuristics to guide research, allowing for more informed decisions. As a result, A* achieves a slightly better optimization than BFS. On the other hand, A* has a slightly faster run time than BFS due to the additional calculations required for the heuristics. These results highlight the trade-off between trajectory optimization and the complexity of the calculations when choosing between A* and BFS for planning labyrinthine trajectories. It should be noted that A* typically explores a smaller number of nodes than BFS to achieve the objective.
@@ -127,7 +127,7 @@ The selection of A* as the best-performing algorithm is justified by its superio
 <h2>Detailed Analysis of A*:</h2> 
 A* has several strengths that make it a suitable choice for maze path planning applications. First, it combines the benefits of both informed and uninformed search algorithms. By incorporating heuristics, A* intelligently explores the search space and focuses on promising paths, leading to efficient and optimal solutions. Additionally, A* is versatile and can handle different maze configurations and problem complexities. The use of heuristics allows A* to adapt its search strategy based on the characteristics of the maze, making it well-suited for various maze types, sizes, and layouts. Furthermore, A* can be applied to a wide range of applications beyond maze path planning. Its ability to find optimal paths is valuable in fields such as robotics, navigation systems, and route planning. A* can effectively solve complex problems where finding the shortest or most optimal paths is essential. It is important to note that the selection of A* as the best algorithm is based on the specific context and objectives of our project. Depending on the unique requirements of different applications and the trade-offs between different performance metrics, other algorithms such as BFS or DFS may be more suitable choices.
 <p align="center">
-  <img src="" title="Figure 16: Search path and path length"  height="400"><br>
+  <img src="com.png" title="Figure 16: Search path and path length"  height="400"><br>
 </p>
 
 In conclusion, A* was chosen as the best algorithm in our study based on its superior performance in terms of path cost and its ability to find more optimal paths. Its strengths, such as intelligent exploration and adaptability to different maze configurations, make it a powerful tool for maze path planning and other related applications.
