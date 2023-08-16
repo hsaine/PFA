@@ -62,12 +62,38 @@ In order to comprehensively assess and compare the performance of the search alg
 In this section, we present the results of our comparative study, focusing on the performance of each search algorithm individually. We analyze their performance in terms of path cost, computational efficiency, and solution quality. To aid in the presentation of our analysis, we utilize tables and graphs to showcase the quantitative results obtained.
 
 <h2>BFS vs. DFS (Start to Goal is Far):</h2>
+We first compared the performance of BFS and DFS when the start and goal positions were relatively far apart in the maze.
+The objective was to evaluate how these algorithms fared in terms of path-finding efficiency over longer distances. Figures illustrates the comparison of time execution, path cost, and search path for BFS and DFS.
+<p align="center">
+  <img src="output_8_0.png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>
+</p>
 
+<p align="center">
+  <img src="output_9_0.png" title="Path Length Comparison: DFS vs BFS"  height="400"><br>
+</p>
 
+<p align="center">
+  <img src="output_10_0.png" title="Search Path Comparison: DFS vs BFS"  height="400"><br>
+</p>
+
+From the results, we observed that DFS generally exhibited lower Serach path costs compared to BFS in this scenario. This is because BFS systematically explores the neighboring nodes, ensuring that the shortest path is found. However, DFS demonstrated faster execution times due to its depth-first nature, which allows it to quickly explore a single branch of the maze. These findings highlight the trade-off between path optimality and computational efficiency when selecting between BFS and DFS for maze path planning. In conclusion, based on our findings, it can be concluded that DFS outperforms BFS in terms of memory complexity. DFS requires less memory as it explores
+a single path deeply before backtracking, while BFS needs to store all visited nodes in memory. However, it is important to note that DFS does not guarantee the optimal path.
 
 <h2>DFS vs. BFS (Start to Goal is Near):</h2>
+In the next comparison, we focused on the performance of DFS and BFS when the start and goal positions were in close proximity within the maze. This evaluation aimed to assess how these algorithms performed when the search space was limited.
+Figures presents the results of time execution, path cost, and search path for DFS and BFS.
+<p align="center">
+  <img src="1.png" title="Execution Time Comparison: DFS vs BFS"  height="400"><br>1
+</p>
 
+<p align="center">
+  <img src="2.png" title="Path Length Comparison: DFS vs BFS"  height="400"><br>
+</p>
 
+<p align="center">
+  <img src="3.png" title="Search Path Comparison: DFS vs BFS"  height="400"><br>
+</p>
+The results indicated that BFS generally achieved lower search path costs compared to DFS when the start and goal were near. This is because BFS explores the maze uniformly and is more likely to find a shorter path when the goal is in close proximity. However, DFS exhibited slowly execution times due to its depth-first nature. These findings emphasize the importance of considering the proximity of the start and goal positions when selecting between DFS and BFS for maze path planning.
 
 <h2>A* vs. BFS:</h2>
 
