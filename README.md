@@ -188,4 +188,10 @@ Overall, our project has shed light on the performance and
 efficiency of search algorithms in maze path planning. The insights gained from this study can guide researchers and practitioners in selecting appropriate algorithms and designing efficient path planning systems. By addressing the identified limitations and exploring future research directions, we can continue to advance the field of path planning and its applications
 in various domains.
 
+<h1 align="center">Team</h1>
+<ul>
+	<li> Ayoub Hsaine</li>
+	<li> Yassine Bouargane</li>
+	<li> Chama Essouiad</li>
+</ul>
 
